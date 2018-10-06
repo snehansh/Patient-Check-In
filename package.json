@@ -4,7 +4,7 @@
   "description": "Web app to help patient check in",
   "main": "index.js",
   "scripts": {
-    "start": "npm-run-all --parallel open:src webpack",
+    "start": "npm-run-all --parallel webpack open:src",
     "open:src": "babel-node server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack -wd --config webpack.dev.config.js"

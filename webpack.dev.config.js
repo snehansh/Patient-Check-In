@@ -4,15 +4,14 @@ const webpack = require('webpack');
 const config = {
   mode: 'development',
   entry: [
-    'babel-polyfill',
-    'eventsource-polyfill',
-    'webpack-hot-middleware/client?reload=true',
+    'eventsource-polyfill', // necessary for hot reloading with IE
+    'webpack-hot-middleware/client',
     './app/components/index.js' // app's entry point
   ],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
-    publicPath: '/dist/'
+    publicPath: '/'
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()

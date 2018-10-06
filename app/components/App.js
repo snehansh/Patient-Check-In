@@ -5,7 +5,7 @@ class App extends Component {
   render() {
     return (
         <div>
-          First React Component!!
+          First React Component!
         </div>
     );
   }
