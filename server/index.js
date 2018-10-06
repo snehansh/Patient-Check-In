@@ -7,8 +7,6 @@ const port = 3001;
 const app = express();
 const compiler = webpack(config);
 
-// app.use(express.static('dist'));
-
 app.set('view engine', 'ejs');
 
 app.use(require('webpack-dev-middleware')(compiler, {
@@ -17,11 +15,7 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-// app.use(express.static('dist'));
-
 app.get('*', function (req, res) {
-  // res.sendFile(path.join(__dirname,'../dist/index.html'));
-  // res.render(path.join(__dirname,'../src/index.ejs'));
   res.render('index');
 });
 
