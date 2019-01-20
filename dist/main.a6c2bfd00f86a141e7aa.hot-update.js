@@ -1,0 +1,15 @@
+webpackHotUpdate("main",{
+
+/***/ "./app/actions/doctorActions.js":
+/*!**************************************!*\
+  !*** ./app/actions/doctorActions.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("/* WEBPACK VAR INJECTION */(function(module) {\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.loadRecords = loadRecords;\n\nvar _actionTypes = __webpack_require__(/*! ./actionTypes */ \"./app/actions/actionTypes.js\");\n\nvar types = _interopRequireWildcard(_actionTypes);\n\nfunction _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }\n\n(function () {\n  var enterModule = __webpack_require__(/*! react-hot-loader */ \"./node_modules/react-hot-loader/index.js\").enterModule;\n\n  enterModule && enterModule(module);\n})();\n\nfunction loadRecords() {\n  return {\n    type: types.LOAD_RECORDS,\n    doctors: doctors\n  };\n}\n\n// export function loadRecordsSuccess(doctors) {\n//   return {\n//     type: types.LOAD_RECORDS_SUCCESS,\n//     doctors\n//   };\n// }\n\n;\n\n(function () {\n  var reactHotLoader = __webpack_require__(/*! react-hot-loader */ \"./node_modules/react-hot-loader/index.js\").default;\n\n  var leaveModule = __webpack_require__(/*! react-hot-loader */ \"./node_modules/react-hot-loader/index.js\").leaveModule;\n\n  if (!reactHotLoader) {\n    return;\n  }\n\n  reactHotLoader.register(loadRecords, 'loadRecords', 'C:/Learning/Personal_Project/Code/Patient_Check_In/app/actions/doctorActions.js');\n  leaveModule(module);\n})();\n\n;\n/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../node_modules/webpack/buildin/module.js */ \"./node_modules/webpack/buildin/module.js\")(module)))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9hcHAvYWN0aW9ucy9kb2N0b3JBY3Rpb25zLmpzLmpzIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vL2FwcC9hY3Rpb25zL2RvY3RvckFjdGlvbnMuanM/ZjgzZiJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgKiBhcyB0eXBlcyBmcm9tICcuL2FjdGlvblR5cGVzJztcclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBsb2FkUmVjb3JkcygpIHtcclxuICByZXR1cm4ge1xyXG4gICAgdHlwZTogdHlwZXMuTE9BRF9SRUNPUkRTLFxyXG4gICAgZG9jdG9yc1xyXG4gIH07XHJcbn1cclxuXHJcbi8vIGV4cG9ydCBmdW5jdGlvbiBsb2FkUmVjb3Jkc1N1Y2Nlc3MoZG9jdG9ycykge1xyXG4vLyAgIHJldHVybiB7XHJcbi8vICAgICB0eXBlOiB0eXBlcy5MT0FEX1JFQ09SRFNfU1VDQ0VTUyxcclxuLy8gICAgIGRvY3RvcnNcclxuLy8gICB9O1xyXG4vLyB9XHJcbiJdLCJtYXBwaW5ncyI6Ijs7Ozs7QUFFQTtBQUNBO0FBSEE7QUFDQTtBQURBO0FBQ0E7Ozs7Ozs7OztBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBRkE7QUFJQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7Ozs7Ozs7Ozs7OztBQWJBOzs7OztBIiwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./app/actions/doctorActions.js\n");
+
+/***/ })
+
+})

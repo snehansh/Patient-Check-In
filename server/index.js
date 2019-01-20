@@ -2,8 +2,9 @@ import express from 'express';
 import path from 'path';
 import webpack from 'webpack';
 import config from '../webpack.dev.config.js';
+import serverRender from './serverRender';
 
-const port = 3001;
+const port = 3000;
 const app = express();
 const compiler = webpack(config);
 
@@ -15,8 +16,9 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.get('*', function (req, res) {
-  res.render('index');
+app.get('/', function (req, res) {
+  const initialContent = serverRender();
+  res.render('index', { initialContent });
 });
 
 app.use(express.static('dist'));
