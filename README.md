@@ -1,6 +1,7 @@
 # Patient-Check-In
 
-This repository is for the Patient-Check-In application. It will allow users(patients) to check in before a doctor visit.
+This repository is for the Patient-Check-In application. <br>
+It will allow users(patients) to check in before a doctor visit.
 
 <b>Installation</b>
 
