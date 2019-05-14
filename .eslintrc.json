@@ -11,7 +11,12 @@
         "jquery": true,
         "mocha": true
     },
-    "extends": "eslint:recommended",
+    "settings": {
+        "react": {
+            "pragma": "React",
+            "version": "16.8.6"
+        }
+    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true
