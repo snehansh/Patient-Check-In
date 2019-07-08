@@ -6,15 +6,15 @@ import DataApi from '../../server/DataApi';
 
 import DoctorsList from './DoctorsList';
 
-const doctors = new DataApi(data);
+// const doctors = new DataApi(data);
 
-const dataList = doctors.getList();
+// const dataList = doctors.getList();
 
 class App extends React.PureComponent {
   render() {
     return (
         <div>
-          <DoctorsList data = {dataList} />
+          <DoctorsList data = {this.props.doctors} />
         </div>
     );
   }

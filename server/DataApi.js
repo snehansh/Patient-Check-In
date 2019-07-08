@@ -1,6 +1,8 @@
+import testData from './testData.json';
+
 class DataApi {
-  constructor(rawData) {
-    this.rawData = rawData;
+  constructor() {
+    this.rawData = testData.data;
   }
   getList() {
     return this.rawData.doctors;

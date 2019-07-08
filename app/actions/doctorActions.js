@@ -10,9 +10,10 @@ export function loadRecordsSuccess(doctors) {
 
 export function loadRecords() {
   return function(dispatch) {
-    return DataApi.getList().then(doctors => {
-      loadRecordsSuccess(doctors);
-    }).catch(error => {
+    return fetch("https://jsonplaceholder.typicode.com/users")
+    .then(response => response.json())
+    .then(response => dispatch(loadRecordsSuccess(response))
+    ).catch(error => {
       throw(error);
     });
   };

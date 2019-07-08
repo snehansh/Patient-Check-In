@@ -6,5 +6,6 @@ export default function doctorReducer(state = initialState.doctors, action) {
     case types.LOAD_RECORDS_SUCCESS:
       return action.doctors;
     default:
+      return state;
   }
 }
