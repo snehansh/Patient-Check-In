@@ -4,7 +4,7 @@ import initialState from './initialState';
 export default function doctorReducer(state = initialState.doctors, action) {
   switch (action.type) {
     case types.LOAD_RECORDS_SUCCESS:
-      return action.doctors;
+      return action.payload;
     default:
       return state;
   }

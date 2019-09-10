@@ -9,12 +9,21 @@ export function loadRecordsSuccess(doctors) {
 }
 
 export function loadRecords() {
-  return function(dispatch) {
-    return fetch("https://jsonplaceholder.typicode.com/users")
-    .then(response => response.json())
-    .then(response => dispatch(loadRecordsSuccess(response))
-    ).catch(error => {
-      throw(error);
-    });
+  return {
+    type: 'LOAD_RECORDS'
   };
 }
+
+
+
+// export function loadRecords() {
+//   return function(dispatch) {
+//     return fetch("https://jsonplaceholder.typicode.com/users")
+//     .then(response => response.json())
+//     .then(response => dispatch(loadRecordsSuccess(response))
+//     ).catch(error => {
+//       throw(error);
+//     });
+//   };
+// }
+
